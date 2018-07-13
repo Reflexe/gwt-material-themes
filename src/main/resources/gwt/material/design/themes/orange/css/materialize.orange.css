@@ -6640,7 +6640,6 @@ textarea.materialize-textarea {
     font-size: 0.8rem;
     transform: translateY(-140%); }
   .input-field .prefix {
-    position: absolute;
     width: 3rem;
     font-size: 2rem;
     transition: color .2s; }

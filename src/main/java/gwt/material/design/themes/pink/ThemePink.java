@@ -20,15 +20,15 @@
 package gwt.material.design.themes.pink;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemePink extends ThemeLoader.ThemeBundle {
     ThemePink INSTANCE = GWT.create(ThemePink.class);
 
     @Source("gwt/material/design/themes/pink/css/materialize.pink.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/pink/css/overridecss.pink.css")
-    TextResource overrides();
+    CssResource overrides();
 }

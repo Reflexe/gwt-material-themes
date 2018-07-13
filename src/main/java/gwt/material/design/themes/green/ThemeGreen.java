@@ -20,15 +20,15 @@
 package gwt.material.design.themes.green;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeGreen extends ThemeLoader.ThemeBundle {
     ThemeGreen INSTANCE = GWT.create(ThemeGreen.class);
 
     @Source("gwt/material/design/themes/green/css/materialize.green.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/green/css/overridecss.green.css")
-    TextResource overrides();
+    CssResource overrides();
 }

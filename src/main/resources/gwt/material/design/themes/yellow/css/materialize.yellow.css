@@ -7344,9 +7344,6 @@ select {
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
   background-color: #fff176; }
-  .side-nav .collapsible-body li.active a,
-  .side-nav.fixed .collapsible-body li.active a {
-    color: white; }
 
 #sidenav-overlay {
   position: fixed;

@@ -20,15 +20,17 @@
 package gwt.material.design.themes.blue;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeBlue extends ThemeLoader.ThemeBundle {
     ThemeBlue INSTANCE = GWT.create(ThemeBlue.class);
 
-    @Source("gwt/material/design/themes/blue/css/materialize.blue.css")
-    TextResource style();
+    @Source("gwt/material/design/themes/blue/css/materialize.blue.gss")
+    @CssResource.NotStrict
+    CssResource style();
 
-    @Source("gwt/material/design/themes/blue/css/overridecss.blue.css")
-    TextResource overrides();
+    @Source("gwt/material/design/themes/blue/css/overridecss.blue.gss")
+    @CssResource.NotStrict
+    CssResource overrides();
 }

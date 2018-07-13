@@ -20,15 +20,15 @@
 package gwt.material.design.themes.grey;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeGrey extends ThemeLoader.ThemeBundle {
     ThemeGrey INSTANCE = GWT.create(ThemeGrey.class);
 
     @Source("gwt/material/design/themes/grey/css/materialize.grey.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/grey/css/overridecss.grey.css")
-    TextResource overrides();
+    CssResource overrides();
 }

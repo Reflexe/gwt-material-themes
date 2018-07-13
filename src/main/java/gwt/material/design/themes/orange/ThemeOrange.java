@@ -20,15 +20,15 @@
 package gwt.material.design.themes.orange;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeOrange extends ThemeLoader.ThemeBundle {
     ThemeOrange INSTANCE = GWT.create(ThemeOrange.class);
 
     @Source("gwt/material/design/themes/orange/css/materialize.orange.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/orange/css/overridecss.orange.css")
-    TextResource overrides();
+    CssResource overrides();
 }

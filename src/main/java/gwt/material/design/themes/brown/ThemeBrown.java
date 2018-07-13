@@ -20,15 +20,15 @@
 package gwt.material.design.themes.brown;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeBrown extends ThemeLoader.ThemeBundle {
     ThemeBrown INSTANCE = GWT.create(ThemeBrown.class);
 
     @Source("gwt/material/design/themes/brown/css/materialize.brown.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/brown/css/overridecss.brown.css")
-    TextResource overrides();
+    CssResource overrides();
 }

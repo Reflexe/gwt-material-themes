@@ -20,15 +20,15 @@
 package gwt.material.design.themes.red;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeRed extends ThemeLoader.ThemeBundle {
     ThemeRed INSTANCE = GWT.create(ThemeRed.class);
 
     @Source("gwt/material/design/themes/red/css/materialize.red.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/red/css/overridecss.red.css")
-    TextResource overrides();
+    CssResource overrides();
 }

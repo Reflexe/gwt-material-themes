@@ -20,15 +20,15 @@
 package gwt.material.design.themes.purple;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemePurple extends ThemeLoader.ThemeBundle {
     ThemePurple INSTANCE = GWT.create(ThemePurple.class);
 
     @Source("gwt/material/design/themes/purple/css/materialize.purple.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/purple/css/overridecss.purple.css")
-    TextResource overrides();
+    CssResource overrides();
 }

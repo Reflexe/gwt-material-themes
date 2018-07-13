@@ -20,15 +20,15 @@
 package gwt.material.design.themes.yellow;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeYellow extends ThemeLoader.ThemeBundle {
     ThemeYellow INSTANCE = GWT.create(ThemeYellow.class);
 
     @Source("gwt/material/design/themes/yellow/css/materialize.yellow.css")
-    TextResource style();
+    CssResource style();
 
     @Source("gwt/material/design/themes/yellow/css/overridecss.yellow.css")
-    TextResource overrides();
+    CssResource overrides();
 }

@@ -24,7 +24,8 @@ import com.google.gwt.core.client.RunAsyncCallback;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.StyleInjector;
 import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
+import gwt.material.design.client.resources.MaterialResources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,9 +50,9 @@ public class ThemeLoader {
         void onFailure(Throwable reason);
     }
 
-    public interface ThemeBundle extends ClientBundle {
-        TextResource style();
-        TextResource overrides();
+    public interface ThemeBundle extends MaterialResources {
+        CssResource style();
+        CssResource overrides();
     }
 
     private static List<Element> elements;

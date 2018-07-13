@@ -21,15 +21,15 @@ package gwt.material.design.themes.amber;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.TextResource;
+import com.google.gwt.resources.client.CssResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
 public interface ThemeAmber extends ThemeLoader.ThemeBundle {
     ThemeAmber INSTANCE = GWT.create(ThemeAmber.class);
 
     @ClientBundle.Source("gwt/material/design/themes/amber/css/materialize.amber.css")
-    TextResource style();
+    CssResource style();
 
     @ClientBundle.Source("gwt/material/design/themes/amber/css/overridecss.amber.css")
-    TextResource overrides();
+    CssResource overrides();
 }
